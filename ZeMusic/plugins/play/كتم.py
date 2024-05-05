@@ -125,7 +125,7 @@ async def unmute_all(client, message):
    usr = await client.get_chat(message.from_user.id)
    name = usr.first_name
    get = await client.get_chat_member(message.chat.id, message.from_user.id)
-   if get.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR] or message.from_user.id == 860340899ط:
+   if get.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR] or message.from_user.id == 860340899:
     global muted_users
     count = len(muted_users)
     chat_id = message.chat.id
