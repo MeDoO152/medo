@@ -11,7 +11,7 @@ from ZeMusic import app
 from asyncio import gather
 
 
-@app.on_message(command(["تلكراف","ميديا","تليجراف","تليغراف"]))
+@app.on_message(filters.command(["تلكراف","ميديا","تليجراف","تليغراف"]))
 async def get_link_group(client, message):
     try:
         text = await message.reply("↯︙يعالج ...")
