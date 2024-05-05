@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from import app
+from app
 from config import OWNER_ID
 import asyncio
 from pytgcalls import PyTgCalls, StreamType
