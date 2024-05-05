@@ -7,8 +7,6 @@ languages = {}
 languages_present = {}
 
 
-def get_command(lang: str):
-  return languages[lang]
 
 def get_string(lang: str):
     return languages[lang]
