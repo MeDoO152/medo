@@ -2,7 +2,6 @@ from pyrogram import Client
 from pyrogram.types import ChatPermissions, Message
 from datetime import date
 import time
-from config import sudoers, get_bot_information
 from ZeMusic.plugins.play.developer import check_username
 from ZeMusic.plugins.play.group_rtb import managerrep_for_supmit, addadminrep_for_supmit
 from ZeMusic.plugins.play.rtp_function import sudooo2
