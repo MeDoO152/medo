@@ -38,7 +38,7 @@ def get_file_id(msg: Message):
     
 )
 async def huhh(client: Client, message: Message):
-    await message.reply_video(
+    await message.reply_photo(
         photo=f"https://telegra.ph/file/5d5218d8cf4afd2c3e90c.jpg",
         caption=f"""**[𝗦𝗢𝗨𝗥𝗖𝗘 𝗠𝗲𝗗𝗼𝗢 - - ‍💻🖤](t.me/V_l_B2)**\n\n**{message.from_user.mention}\n•────‌‌‏──‌‌‏─‌‌‏─‌‌‏─‌‌‏─‌‌‏─‌‌‏─‌‌‏────‌‌‏──‌‌─‌‌‏─•
     ╔═══════ 𝕄𝔼𝔻𝕆𝕆 ═══════╗  
@@ -68,7 +68,7 @@ async def huhh(client: Client, message: Message):
 
 )
 async def huhh(client: Client, message: Message):
-    await message.reply_video(
+    await message.reply_photo(
         photo=f"https://telegra.ph/file/5d5218d8cf4afd2c3e90c.jpg",
         caption=f"""╭──── • ◈ • ────╮
 么 [᥉᥆υᖇᥴᥱ 𝙼𝚎𝙳𝚘𝙾](t.me/V_l_B2)
@@ -105,7 +105,7 @@ async def huhh(client, message):
     to_url = f"tg://openmessage?user_id={to_id}"
     from_url = f"tg://openmessage?user_id={from_id}"
     ahmed = message.text
-    await message.reply_animation(
+    await message.reply_video(
         video=f"https://telegra.ph/file/5a18fe591860a8a98f39f.mp4",
         caption=f"""↯︙قتل ↫ ⦗ {app.get_chat(to_id).first_name}]({to_url}) ⦘\nالضحيه دا 😢 ↫ ⦗ [{app.get_chat(from_id).first_name}]({from_url}) ⦘\nانا لله وانـا اليـه راجعـون 😢😢""",
     )
