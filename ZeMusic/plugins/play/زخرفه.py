@@ -1,25 +1,20 @@
-import asyncio
-import config
+
+import random
+import re
 from strings.filters import command
-from pyrogram import Client, filters
+from pyrogram import Client
+from pyrogram.types import Message
 from ZeMusic import app
-from config import OWNER_ID
-from ZeMusic.misc import SUDOERS
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, ReplyKeyboardMarkup
-from pyrogram.types import (InlineKeyboardButton,CallbackQuery,InlineKeyboardMarkup, Message)
-from ZeMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
-
-
 
 @app.on_message(command("زخرفه"))
 async def zahrafa(c: Client, m: Message):
     text_list = m.text.split(None, 1)
     if len(text_list) < 2:
-        await m.reply_text("◍ يجب عليك إرسال نص يحتوي على 2 عنصر على الأقل لتشكيله!\n√", reply_to_message_id=m.message_id)
+        await m.reply_text("**◍خطأ حاول مرة أخرى\n\nأدخل `زخرفه مارو`√**", reply_to_message_id=m.id)
         return
     text = text_list[1].split(None, 1)[1] if len(text_list[1].split()) > 1 else text_list[1]
     if len(text) > 20:
-        await m.reply_text("◍ لا يمكنك تشكيل أكثر من 20 حرفاً، يرجى المحاولة مرة أخرى!\n√", reply_to_message_id=m.message_id)
+        await m.reply_text("**◍لا أستطيع إنشاء أكثر من شخصية واحدة، حاول مرة أخرى\n√**", reply_to_message_id=m.id)
         return
 
     # هنا يتم تنفيذ زخرفة النص
@@ -27,7 +22,7 @@ async def zahrafa(c: Client, m: Message):
 
     else:
         if re.match("\n", str(m.text)):
-            await m.reply_text("◍ لا يمكن زخرفه نص يحتوي على اكثر من سطر\n√", reply_to_message_id=m.message_id)
+            await m.reply_text("**◍لا أستطيع تزيين النص إذا كان من سطرين\n√**", reply_to_message_id=m.id)
             return
     EmojeS = [
         ' 𓁻',
@@ -831,7 +826,7 @@ async def zahrafa(c: Client, m: Message):
     zhrf9 = re.sub('m', '𝕄', zhrf9)
     zhrf9 = re.sub('M', '𝕄', zhrf9)
 
-    Text_Zhrfa = "1- `" + zhrf + random.choice(EmojeS) \
+    Text_Zhrfa = "♕ `" + zhrf + random.choice(EmojeS) \
                  + "`\n\n` " + zhrf2 + random.choice(EmojeS) \
                  + "`\n\n` " + zhrf3 + random.choice(EmojeS) \
                  + "•\n\n` " + zhrf4 + random.choice(EmojeS) \
@@ -841,5 +836,5 @@ async def zahrafa(c: Client, m: Message):
                  + "`\n\n` " + zhrf8 + random.choice(Emoje) \
                  + "`\n\n` " + zhrf9 + random.choice(Emoje) \
                  + "`\n\n` " + zhrf5 + random.choice(Emoje)
-    Text_Zhrfa = Text_Zhrfa + "`\n\n اضغط علـي الاسـم ليـتم النـسخ \n│ \n🐉"
-    await m.reply_text(Text_Zhrfa, reply_to_message_id=m.message_id, parse_mode="Markdown")
+    Text_Zhrfa = Text_Zhrfa + "**\n\n المس سيتم نسخ الاسم \n│ \n👾**"
+    await m.reply_text(Text_Zhrfa, reply_to_message_id=m.id)
