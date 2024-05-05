@@ -493,7 +493,7 @@ async def callback_query(client, CallbackQuery):
         InlineKeyboardButton ('⌞ ᥉᥆υᖇᥴᥱ ꪔᥱ𝙳o᥆⌝', url =f"https://t.me/V_l_B2")              
                  ],[
                 InlineKeyboardButton(
-                        "𝗁᥆ꪔᥱ", callback_data="close"),
+                        "𝗁᥆ꪔᥱ", callback_data="GAME"),
                ],
           ]
      
@@ -510,7 +510,7 @@ async def callback_query(client, CallbackQuery):
                       InlineKeyboardButton ('⌞ ᥉᥆υᖇᥴᥱ ꪔᥱ𝙳o᥆⌝', url =f"https://t.me/V_l_B2")
                       ],[
                          InlineKeyboardButton (
-                                 "𝗁᥆ꪔᥱ", callback_data="close"),
+                                 "𝗁᥆ꪔᥱ", callback_data="GAME"),
                     ]
                ]    
                await CallbackQuery.edit_message_text( 
