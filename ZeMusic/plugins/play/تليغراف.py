@@ -6,7 +6,7 @@ from strings.filters import command
 from ZeMusic import app
 
 
-@app.on_message(filters.command(["تلغراف", "تلغراف ميديا", "ميديا", "تلجراف", "تليجراف"]) & filters.group)
+@app.on_message(command(["تلغراف", "تلغراف ميديا", "ميديا", "تلجراف", "تليجراف"]) & filters.group)
 async def telegraph(client: Client, message: Message):
     replied = message.reply_to_message
     if not replied:
