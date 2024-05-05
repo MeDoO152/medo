@@ -1,0 +1,73 @@
+{
+    "name": "𝗦𝗢𝗨𝗥𝗖𝗘 𝗠𝗲𝗗𝗼𝗢",
+    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
+    "logo": "https://telegra.ph/file/fd1d0b81db80a82bdb407.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "AnonX",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "https://my.telegram.org اب ايبي ",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "https://my.telegram.org ايبي اش",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "توكن البوت",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "https://cloud.mongodb.com. كود منجو ديبي",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "ايدي الخاص بيك",
+        "value": "",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "جلسة بايوجرام 2",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": " API key هروكي",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "اسم المشروع الي فاول خانه",
+        "value": "",
+        "required": false
+      },
+      "LOGGER_ID": {
+        "description": "ايدي جروب التخزين",
+        "value": "",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
