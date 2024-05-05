@@ -17,7 +17,6 @@ import config
 import re
 import string
 from pyrogram import enums
-import lyricsgenius as lg
 from pyrogram.types import (InlineKeyboardButton, ChatPermissions, InlineKeyboardMarkup, Message, User)
 from pyrogram import Client, filters
 from ZeMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
