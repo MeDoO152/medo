@@ -12,7 +12,7 @@ from asyncio import gather
 
 
 
-@app.on_message(command([ا"ميديا","تلغراف","تليجراف"]))
+@app.on_message(command(["ميديا","تلغراف","تليجراف"]))
 async def get_link_group(client, message):
     try:
         text = await message.reply("↯︙يعالج ...")
