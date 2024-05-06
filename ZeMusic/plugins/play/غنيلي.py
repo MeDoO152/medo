@@ -12,6 +12,41 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 from ZeMusic import app
 from random import  choice, randint
 
+
+
+@app.on_message(filters.command(["فيلم", "فيلمك. 🎥"], ""))
+async def ihd(client: Client, message: Message):
+    rl = random.randint(2,34)
+    url = f"https://t.me/gyigkk/{rl}"
+    await client.send_audio(message.chat.id,url,caption="🐉 ¦ تـم اختيـار فلم لـك",parse_mode=enums.ParseMode.HTML)
+    reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        message.from_user.first_name, url=f"https://t.me/V_l_B2")
+                ],
+            ]
+        )
+
+
+
+@app.on_message(filters.command(["غنيلي", "غني", "غنيلي. 🎙"], ""))
+async def ihd(client: Client, message: Message):
+    rl = random.randint(2,90)
+    url = f"https://t.me/gukygn/{rl}"
+    await client.send_voice(message.chat.id,url,caption="🐉 ¦ تـم اختيـار الاغـنـية لـك",parse_mode=enums.ParseMode.HTML)
+    reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        message.from_user.first_name, url=f"https://t.me/V_l_B2")
+                ],
+            ]
+        )
+
+
+
+
 @app.on_message(filters.command(["صوره", "• صور •", "صور"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,75)
