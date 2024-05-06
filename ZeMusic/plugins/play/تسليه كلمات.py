@@ -4331,7 +4331,7 @@ txt = [
         
 
 
-@app.on_message(filters.command(["اذكار","اذكار"], ""))
+@app.on_message(filters.command(["اذكار","اذكار. 💎"], ""))
 
 async def akar(client: Client, message: Message):
 
@@ -5044,9 +5044,8 @@ async def sraha(client: Client, message: Message):
       await message.reply(
 
         f"{a}")
-        
-        
-        
+
+  
         
         
         
