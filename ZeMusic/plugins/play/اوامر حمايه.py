@@ -21,32 +21,32 @@ async def zdatsr(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "اوامر الحمايه م1", callback_data="help1"),
+                        "اوامر الحمايه ①", callback_data="medo1"),
                     InlineKeyboardButton(
-                        "اوامر الادمنيه م2", callback_data="help2"),
+                        "اوامر الادمنيه ②", callback_data="medo2"),
                 ],[
                     InlineKeyboardButton(
-                        "اوامر المدراء م3", callback_data="help3"),
+                        "اوامر المدراء ③", callback_data="medo3"),
                     InlineKeyboardButton(
-                        "اوامر المنشئين م4", callback_data="help4"),
+                        "اوامر المنشئين ④", callback_data="medo4"),
                 ],[
                     InlineKeyboardButton(
-                        "اوامـر المالكيـن م5", callback_data="help5"),
+                        "اوامـر المالكيـن ⑤", callback_data="medo5"),
                     InlineKeyboardButton(
-                        "اوامر التحشيش م6", callback_data="help6"),
+                        "اوامر التحشيش ⑥", callback_data="medo6"),
                 ],[
                     InlineKeyboardButton(
-                        "اوامــر التسليـه م7", callback_data="help7"),
+                        "اوامــر التسليـه ⑦", callback_data="medo7"),
                     InlineKeyboardButton(
-                        "اوامــر البنـــك م8", callback_data="help8"),
+                        "اوامــر البنـــك ⑧", callback_data="medo8"),
                 ],[
                     InlineKeyboardButton(
-                        "اوامـر المطـور م", callback_data="help9"),
+                        "اوامـر المطـور", callback_data="medo9"),
                     InlineKeyboardButton(
-                        "اوامـر التـشغيل", callback_data="help10"),
+                        "اوامـر التـشغيل", callback_data="medo10"),
                 ],[
                     InlineKeyboardButton(
-                        "الالـعــاب", callback_data="help11"),
+                        "الالـعــاب", callback_data="medo11"),
                 ],[
                     InlineKeyboardButton(
                         "القفل / الفتح", callback_data="zzzdv"),
@@ -71,35 +71,35 @@ async def zzzback(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "اوامر الحمايه م1", callback_data="help1"),
+                        "اوامر الحمايه ①", callback_data="medo1"),
                     InlineKeyboardButton(
-                        "اوامر الادمنيه م2", callback_data="help2"),
+                        "اوامر الادمنيه ②", callback_data="medo2"),
                 ],[
                     InlineKeyboardButton(
-                        "اوامر المدراء م3", callback_data="help3"),
+                        "اوامر المدراء ③", callback_data="medo3"),
                     InlineKeyboardButton(
-                        "اوامر المنشئين م4", callback_data="help4"),
+                        "اوامر المنشئين ④", callback_data="medo4"),
                 ],[
                     InlineKeyboardButton(
-                        "اوامـر المالكيـن م5", callback_data="help5"),
+                        "اوامـر المالكيـن ⑤", callback_data="medo5"),
                     InlineKeyboardButton(
-                        "اوامر التحشيش م6", callback_data="help6"),
+                        "اوامر التحشيش ⑥", callback_data="medo6"),
                 ],[
                     InlineKeyboardButton(
-                        "اوامــر التسليـه م7", callback_data="help7"),
+                        "اوامــر التسليـه ⑦", callback_data="medo7"),
                     InlineKeyboardButton(
-                        "اوامــر البنـــك م8", callback_data="help8"),
+                        "اوامــر البنـــك ⑧", callback_data="medo8"),
                 ],[
                     InlineKeyboardButton(
-                        "اوامـر المطـور م", callback_data="help9"),
+                        "اوامـر المطـور", callback_data="medo9"),
                     InlineKeyboardButton(
-                        "اوامـر التـشغيل", callback_data="help10"),
+                        "اوامـر التـشغيل", callback_data="medo10"),
                 ],[
                     InlineKeyboardButton(
-                        "الالـعــاب", callback_data="help11"),
+                        "الالـعــاب", callback_data="medo11"),
                 ],[
                     InlineKeyboardButton(
-                        "القفل / الفتح", callback_data="help12"),
+                        "القفل / الفتح", callback_data="medo12"),
                     InlineKeyboardButton(
                         "التفعيل/ التعطيل", callback_data="zzzdv"),
                 ],[
@@ -112,7 +112,7 @@ async def zzzback(_, query: CallbackQuery):
 
 
 
-@app.on_callback_query(filters.regex("help7") & SUDOERS)
+@app.on_callback_query(filters.regex("medo7") & SUDOERS)
 async def mpdtsf(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""<b>↯︙مرحباً بك عزيزي المطور </b>\n\n<b>↯︙استخدم الازرار بالاسفل\n↯︙ل تصفح اوامر الميوزك</b>""",
@@ -133,7 +133,7 @@ async def mpdtsf(_, query: CallbackQuery):
 
 
 
-@app.on_callback_query(filters.regex("help12"))
+@app.on_callback_query(filters.regex("medo12"))
 async def zzzll(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""
@@ -345,7 +345,7 @@ async def zzzch(_, query: CallbackQuery):
 
 
 
-@app.on_callback_query(filters.regex("help9") & SUDOERS)
+@app.on_callback_query(filters.regex("medo9") & SUDOERS)
 async def zzzup(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""
@@ -403,7 +403,7 @@ async def zzzup(_, query: CallbackQuery):
 
 
 
-@app.on_callback_query(filters.regex("help10") & SUDOERS)
+@app.on_callback_query(filters.regex("medo10") & SUDOERS)
 async def zzzsu(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""
@@ -570,7 +570,7 @@ async def zzzas(_, query: CallbackQuery):
    )
 
 
-@app.on_callback_query(filters.regex("help11") & SUDOERS)
+@app.on_callback_query(filters.regex("medo11") & SUDOERS)
 async def zzzbn(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""
@@ -720,7 +720,7 @@ async def zzzsu(_, query: CallbackQuery):
         ),
     )
 
-@app.on_callback_query(filters.regex("help7") & SUDOERS)
+@app.on_callback_query(filters.regex("medo7") & SUDOERS)
 async def mpdtsf(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""<b>↯︙مرحباً بك عزيزي المطور </b>\n\n<b>↯︙استخدم الازرار بالاسفل\n↯︙ل تصفح اوامر الميوزك</b>""",
