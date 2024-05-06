@@ -4474,7 +4474,7 @@ txt = [
         
 
 
-@app.on_message(command(["العكس","", ""]))
+@app.on_message(filters.command(["العكس","", ""]))
 
 
 async def cutt(client: Client, message: Message):
