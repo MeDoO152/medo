@@ -15,7 +15,6 @@ from ZeMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 
 
 REPLY_MESSAGE = "**صلي علي اشرف خلق الله 🥹✨**"
-REPLY_MESSAGE = "**صلي علي اشرف خلق الله 🥹✨**"
 
 REPLY_MESSAGE_BUTTONS = [
     [
