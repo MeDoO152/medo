@@ -203,7 +203,7 @@ async def ihd(client: Client, message: Message):
 
 
 
-@app.on_message(command(["شعر", "شع", "ش", "شعر. 🗣"]))
+@app.on_message(filters.command(["شعر", "شع", "ش", "شعر. 🗣"], ""))
 async def ihd(client: Client, message: Message):
     rl = random.randint(8,20)
     url = f"https://t.me/saresnx/{rl}"
